@@ -2,12 +2,11 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "./NavMenu.module.css";
 
-Image;
 const NavMenu = () => {
   return (
     <nav className={styles.nav}>
       <Link href={"/"}>
-        <Image src="/next.svg" width={216} height={30} alt="NextSpace logo" />
+        <Image src="/logo.svg" width={216} height={30} alt="NextSpace logo" />
       </Link>
       <ul className={styles.links}>
         <li>
