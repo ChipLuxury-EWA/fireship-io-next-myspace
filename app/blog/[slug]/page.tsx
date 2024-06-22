@@ -20,7 +20,7 @@ const generateStaticParams = async () => {
 const BlogPostPage = async ({ params }: Props) => {
   const posts: Post[] = await fetch("http://localhost:3000/api/content").then((res) => res.json()); //fetch from api
   const post = posts.find((post) => post.slug === params.slug)!;
-  console.log(posts);
+
   if (!post) {
     return <div>Slug not found</div>;
   }
